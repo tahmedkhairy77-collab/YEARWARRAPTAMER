@@ -11,21 +11,6 @@ function App() {
     { id: 'life', content: { kind: 'text', value: 'hmam' }, isCorrect: false },
     { id: 'love', content: { kind: 'text', value: 'fata' }, isCorrect: true }
   ];
-
-  const clayDateTalkQuizOptions: QuizOption[] = [
-    { id: 'soul', content: { kind: 'text', value: '147085' }, isCorrect: false },
-    { id: 'heart', content: { kind: 'text', value: '260605' }, isCorrect: false },
-    { id: 'life', content: { kind: 'text', value: '193168' }, isCorrect: false },
-    { id: 'love', content: { kind: 'text', value: '168193' }, isCorrect: true }
-  ];
-
-  const passwordQuizOptions: QuizOption[] = [
-    { id: 'soul', content: { kind: 'text', value: '147085' }, isCorrect: false },
-    { id: 'heart', content: { kind: 'text', value: '260605' }, isCorrect: false },
-    { id: 'life', content: { kind: 'text', value: '193168' }, isCorrect: false },
-    { id: 'love', content: { kind: 'text', value: '168193' }, isCorrect: true }
-  ];
-
   const memoryGuessQuizOptions: QuizOption[] = [
     {
       id: 'concert-glow',

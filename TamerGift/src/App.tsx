@@ -51,13 +51,13 @@ function App() {
 
 
   const floatingMemories = [
-    { id: 'memory-one', src: '/imgs/ASUpowePuffMedal.jpeg', x: -220, y: -170, size: 135 },
-    { id: 'memory-two', src: '/imgs/ClayDateNormal.jpeg', x: -20, y: -130, size: 115 },
-    { id: 'memory-three', src: '/imgs/CUsunset.jpeg', x: 170, y: -100, size: 120 },
-    { id: 'memory-four', src: '/imgs/HeartASULongHair.jpeg', x: 220, y: 60, size: 105 },
-    { id: 'memory-five', src: '/imgs/HeartHerBirthday.jpeg', x: -220, y: 30, size: 110 },
-    { id: 'memory-six', src: '/imgs/CUsunset.jpeg', x: 80, y: 180, size: 100 },
-    { id: 'memory-seven', src: '/imgs/HeartHerBirthday.jpeg', x: -60, y: 190, size: 95 }
+    { id: 'memory-one', src: '/imgs/5awl.jpeg', x: -220, y: -170, size: 135 },
+    { id: 'memory-two', src: '/imgs/blackAndWhite.jpeg', x: -20, y: -130, size: 115 },
+    { id: 'memory-three', src: '/imgs/closeUp1.jpeg', x: 170, y: -100, size: 120 },
+    { id: 'memory-four', src: '/imgs/darkRedHijab.jpeg', x: 220, y: 60, size: 105 },
+    { id: 'memory-five', src: '/imgs/lightRedHijab.jpeg', x: -220, y: 30, size: 110 },
+    { id: 'memory-six', src: '/imgs/mask.jpeg', x: 80, y: 180, size: 100 },
+    { id: 'memory-seven', src: '/imgs/toung.jpeg', x: -60, y: 190, size: 95 }
   ];
 
   const floatingHearts = Array.from({ length: 14 }, (_, index) => ({
@@ -164,49 +164,8 @@ function App() {
     },
     {
       id: 4,
-      bgColor: 'linear-gradient(135deg, #f3c3d8 0%, #ff7f9b 55%, #9d90ff 100%)',
-      introTexts: ['ٌوحشتنيي'],
-      content: (
-        <div className="slide-container">
-          <motion.h1
-            initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-          >
-          ١٠ مرات❤️
-ياريت نشتغل على نفسنا السنا الجاية🫵🏼
-          </motion.h1>
-          <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}>
-            {floatingWa74.map(memory => (
-              <FloatingMemory key={memory.id} {...memory} />
-            ))}
-          </div>
-        </div>
-      )
-    },
-    {
-      id: 5,
-      bgColor: 'linear-gradient(135deg, #f4cdbd 0%, #ff8475 55%, #7dc2f8 100%)',
-      introTexts: ['خرجنا سوا'],
-      content: (
-        <div className="slide-container">
-          <motion.h1
-            initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-          >
-          😱١٢ مرة بحالهم
-          </motion.h1>
-          <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}>
-            {floatingMemories.map(memory => (
-              <FloatingMemory key={memory.id} {...memory} />
-            ))}
-          </div>
-        </div>
-      )
-    },
-    {
-      id: 6,
-      bgColor: 'linear-gradient(135deg, #f1d29d 0%, #ff8a58 55%, #6fe3ff 100%)',
-      introTexts: ['بس من ال 12 دول كان فيه خمسة هما السبيشال',],
+      bgColor: 'linear-gradient(135deg, #f2c596 0%, #ffa055 55%, #5ed1dd 100%)',
+      introTexts: ['بس طبعا كان في صور هي الفيفوريت🤩',],
       content: (
         <div className="slide-container">
           <motion.h2
@@ -214,7 +173,7 @@ function App() {
             animate={{ x: 0, opacity: 1 }}
             style={{ fontSize: '1.85rem', marginBottom: '0.5rem' }}
           >
-            أحلى خمس خروجات
+            أحلى خمس صور
           </motion.h2>
           <motion.ul
             style={{
@@ -227,11 +186,11 @@ function App() {
             }}
           >
             {[
-              { text: '8/12', image: '/imgs/ClayDateNormal.jpeg'},
-              { text: '15/10', image: '/imgs/StandingCU.jpeg'},
-              { text: '17/2', image: '/imgs/StandingASU.jpeg'},
-              { text: '22/6', image: '/imgs/HeartMybirthday.jpeg'},
-              { text: '20/11', image: '/imgs/HeartShortHairASU.jpeg'}
+              { text: '', image: '/imgs/StandingCU.jpeg'},
+              { text: '', image: '/imgs/HeartASULongHair.jpeg'},
+              { text: '', image: '/imgs/Ilovemygf.jpeg'},
+              { text: '', image: '/imgs/StandingASU.jpeg'},
+              { text: '', image: '/imgs/HeartMybirthday.jpeg'}
             ].map((item, i) => (
               <motion.li
                 key={item.text}
@@ -265,39 +224,78 @@ function App() {
       )
     },
     {
-      id: 7,
-      bgColor: 'linear-gradient(135deg, #f2c88c 0%, #f674c3 55%, #5b82e0 100%)',
-      introTexts: ['اتصورنا كتييييير مع بعض',"اتصورنا"],
+      id: 5,
+      bgColor: 'linear-gradient(135deg, #f3c3d8 0%, #ff7f9b 55%, #9d90ff 100%)',
+      introTexts: ['ٌوحشتنيي'],
       content: (
-        <div
-          className="slide-container"
-          style={{
-            position: 'relative',
-            width: '100%',
-            height: '100%',
-            padding: '2rem',
-            overflow: 'hidden'
-          }}
-        >
+        <div className="slide-container">
           <motion.h1
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.7 }}
           >
-          📸١٠٩ صورة
+          ١٠ مرات❤️
+ياريت نشتغل على نفسنا السنا الجاية🫵🏼
           </motion.h1>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
-            style={{ marginTop: '1rem', color: 'rgba(35,25,55,0.85)' }}
+          <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}>
+            
+          </div>
+        </div>
+      )
+    },
+    {
+      id: 6,
+      bgColor: 'linear-gradient(135deg, #f4cdbd 0%, #ff8475 55%, #7dc2f8 100%)',
+      introTexts: ['خرجنا سوا'],
+      content: (
+        <div className="slide-container">
+          <motion.h1
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
           >
-          
-          </motion.p>
+          😱١٢ مرة بحالهم
+          </motion.h1>
           <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}>
             {floatingMemories.map(memory => (
               <FloatingMemory key={memory.id} {...memory} />
             ))}
+          </div>
+        </div>
+      )
+    },
+    {
+      id: 7,
+      bgColor: 'linear-gradient(135deg, #f3c3d8 0%, #ff7f9b 55%, #9d90ff 100%)',
+      introTexts: ['ٌوحشتنيي'],
+      content: (
+        <div className="slide-container">
+          <motion.h1
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+          >
+          ١٠ مرات❤️
+ياريت نشتغل على نفسنا السنا الجاية🫵🏼
+          </motion.h1>
+          <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}>
+            
+          </div>
+        </div>
+      )
+    },
+    {
+      id: 8,
+      bgColor: 'linear-gradient(135deg, #f3c3d8 0%, #ff7f9b 55%, #9d90ff 100%)',
+      introTexts: ['ٌوحشتنيي'],
+      content: (
+        <div className="slide-container">
+          <motion.h1
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+          >
+          ١٠ مرات❤️
+ياريت نشتغل على نفسنا السنا الجاية🫵🏼
+          </motion.h1>
+          <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}>
+            
           </div>
         </div>
       )

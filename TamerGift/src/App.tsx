@@ -6,15 +6,17 @@ import '../public/css/App.css';
 
 function App() {
   const sweetTalkQuizOptions: QuizOption[] = [
-    { id: 'soul',content: { kind: 'image', src: '/imgs/rohy.jpeg', alt: 'Concert lights memory' }, isCorrect: true },
-    { id: 'heart', content: { kind: 'image', src: '/imgs/heart.jpeg', alt: 'Concert lights memory' },isCorrect: false },
-    { id: 'life', content: { kind: 'image', src: '/imgs/hyaty.jpeg', alt: 'Concert lights memory' }, isCorrect: false },
-    { id: 'love', content: { kind: 'image', src: '/imgs/habiby.jpeg', alt: 'Concert lights memory' }, isCorrect: false }
+    { id: 'soul', content: { kind: 'text', value: 'bshamil' }, isCorrect: false },
+    { id: 'heart', content: { kind: 'text', value: 'ma7shy' }, isCorrect: false },
+    { id: 'life', content: { kind: 'text', value: 'hmam' }, isCorrect: false },
+    { id: 'love', content: { kind: 'text', value: 'fata' }, isCorrect: true }
   ];
 
   const clayDateTalkQuizOptions: QuizOption[] = [
-    { id: 'soul',content: { kind: 'image', src: '/imgs/meClayDate.jpeg', alt: 'Concert lights memory' }, isCorrect: false },
-    { id: 'heart', content: { kind: 'image', src: '/imgs/herClayDate.jpeg', alt: 'Concert lights memory' },isCorrect: true },
+    { id: 'soul', content: { kind: 'text', value: '147085' }, isCorrect: false },
+    { id: 'heart', content: { kind: 'text', value: '260605' }, isCorrect: false },
+    { id: 'life', content: { kind: 'text', value: '193168' }, isCorrect: false },
+    { id: 'love', content: { kind: 'text', value: '168193' }, isCorrect: true }
   ];
 
   const passwordQuizOptions: QuizOption[] = [
@@ -27,22 +29,22 @@ function App() {
   const memoryGuessQuizOptions: QuizOption[] = [
     {
       id: 'concert-glow',
-      content: { kind: 'image', src: '/imgs/post1.jpeg', alt: 'Concert lights memory' },
+      content: { kind: 'image', src: '/imgs/quiz2.jpeg', alt: 'Concert lights memory' },
       isCorrect: false
     },
     {
       id: 'sunset-giggles',
-      content: { kind: 'image', src: '/imgs/favPost.jpeg', alt: 'Sunset giggles' },
+      content: { kind: 'image', src: '/imgs/quiz1.jpeg', alt: 'Sunset giggles' },
       isCorrect: true
     },
     {
       id: 'coffee-date',
-      content: { kind: 'image', src: '/imgs/post2.jpeg', alt: 'Coffee date selfie' },
+      content: { kind: 'image', src: '/imgs/quiz3.jpeg', alt: 'Coffee date selfie' },
       isCorrect: false
     },
     {
       id: 'grad-steps',
-      content: { kind: 'image', src: '/imgs/post3.jpeg', alt: 'Graduation steps pose' },
+      content: { kind: 'image', src: '/imgs/quiz4.jpeg', alt: 'Graduation steps pose' },
       isCorrect: false
     }
   ];
@@ -51,11 +53,11 @@ function App() {
 
 
   const floatingMemories = [
-    { id: 'memory-one', src: '/imgs/5awl.jpeg', x: -220, y: -170, size: 135 },
+    { id: 'memory-one', src: '/imgs/5awl.jpeg', x: -170, y: -170, size: 135 },
     { id: 'memory-two', src: '/imgs/blackAndWhite.jpeg', x: -20, y: -130, size: 115 },
     { id: 'memory-three', src: '/imgs/closeUp1.jpeg', x: 170, y: -100, size: 120 },
-    { id: 'memory-four', src: '/imgs/darkRedHijab.jpeg', x: 220, y: 60, size: 105 },
-    { id: 'memory-five', src: '/imgs/lightRedHijab.jpeg', x: -220, y: 30, size: 110 },
+    { id: 'memory-four', src: '/imgs/darkRedHijab.jpeg', x: 170, y: 60, size: 105 },
+    { id: 'memory-five', src: '/imgs/lightRedHijab.jpeg', x: -180, y: 70, size: 110 },
     { id: 'memory-six', src: '/imgs/mask.jpeg', x: 80, y: 180, size: 100 },
     { id: 'memory-seven', src: '/imgs/toung.jpeg', x: -60, y: 190, size: 95 }
   ];
@@ -186,11 +188,11 @@ function App() {
             }}
           >
             {[
-              { text: '', image: '/imgs/StandingCU.jpeg'},
-              { text: '', image: '/imgs/HeartASULongHair.jpeg'},
-              { text: '', image: '/imgs/Ilovemygf.jpeg'},
-              { text: '', image: '/imgs/StandingASU.jpeg'},
-              { text: '', image: '/imgs/HeartMybirthday.jpeg'}
+              { text: '', image: '/imgs/fav1.jpeg'},
+              { text: '', image: '/imgs/fav2.jpeg'},
+              { text: '', image: '/imgs/fav3.jpeg'},
+              { text: '', image: '/imgs/fav4.jpeg'},
+              { text: '', image: '/imgs/fav5.jpeg'}
             ].map((item, i) => (
               <motion.li
                 key={item.text}
@@ -220,25 +222,6 @@ function App() {
               </motion.li>
             ))}
           </motion.ul>
-        </div>
-      )
-    },
-    {
-      id: 5,
-      bgColor: 'linear-gradient(135deg, #f3c3d8 0%, #ff7f9b 55%, #9d90ff 100%)',
-      introTexts: ['ٌوحشتنيي'],
-      content: (
-        <div className="slide-container">
-          <motion.h1
-            initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-          >
-          ١٠ مرات❤️
-ياريت نشتغل على نفسنا السنا الجاية🫵🏼
-          </motion.h1>
-          <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}>
-            
-          </div>
         </div>
       )
     },
@@ -252,112 +235,28 @@ function App() {
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
           >
-          😱١٢ مرة بحالهم
+          3 مرات يبووووووي 😱
           </motion.h1>
-          <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}>
-            {floatingMemories.map(memory => (
-              <FloatingMemory key={memory.id} {...memory} />
-            ))}
-          </div>
+        
         </div>
       )
     },
     {
       id: 7,
       bgColor: 'linear-gradient(135deg, #f3c3d8 0%, #ff7f9b 55%, #9d90ff 100%)',
-      introTexts: ['ٌوحشتنيي'],
+      introTexts: ['ٌاتخانقنا كام مرة😠'],
       content: (
         <div className="slide-container">
           <motion.h1
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
           >
-          ١٠ مرات❤️
-ياريت نشتغل على نفسنا السنا الجاية🫵🏼
+          ♾️infinity
+          
           </motion.h1>
           <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}>
             
           </div>
-        </div>
-      )
-    },
-    {
-      id: 8,
-      bgColor: 'linear-gradient(135deg, #f3c3d8 0%, #ff7f9b 55%, #9d90ff 100%)',
-      introTexts: ['ٌوحشتنيي'],
-      content: (
-        <div className="slide-container">
-          <motion.h1
-            initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-          >
-          ١٠ مرات❤️
-ياريت نشتغل على نفسنا السنا الجاية🫵🏼
-          </motion.h1>
-          <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}>
-            
-          </div>
-        </div>
-      )
-    },
-    {
-      id: 8,
-      bgColor: 'linear-gradient(135deg, #f2c596 0%, #ffa055 55%, #5ed1dd 100%)',
-      introTexts: ['بس طبعا كان في صور هي الفيفوريت🤩',],
-      content: (
-        <div className="slide-container">
-          <motion.h2
-            initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            style={{ fontSize: '1.85rem', marginBottom: '0.5rem' }}
-          >
-            أحلى خمس صور
-          </motion.h2>
-          <motion.ul
-            style={{
-              listStyle: 'none',
-              padding: 0,
-              marginTop: '10px',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '12px'
-            }}
-          >
-            {[
-              { text: '', image: '/imgs/StandingCU.jpeg'},
-              { text: '', image: '/imgs/HeartASULongHair.jpeg'},
-              { text: '', image: '/imgs/Ilovemygf.jpeg'},
-              { text: '', image: '/imgs/StandingASU.jpeg'},
-              { text: '', image: '/imgs/HeartMybirthday.jpeg'}
-            ].map((item, i) => (
-              <motion.li
-                key={item.text}
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.3 + i * 0.2 }}
-                style={{ 
-                  fontSize: '1.15rem', 
-                  margin: 0,
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '12px'
-                }}
-              >
-                <span style={{ fontWeight: 'bold', minWidth: '24px' }}>{i + 1}</span>
-                <img 
-                  src={item.image} 
-                  alt={item.text}
-                  style={{ 
-                    width: '80px', 
-                    height: '80px', 
-                    objectFit: 'cover',
-                    borderRadius: '8px'
-                  }} 
-                />
-                <span>{item.text}</span>
-              </motion.li>
-            ))}
-          </motion.ul>
         </div>
       )
     },
@@ -367,10 +266,10 @@ function App() {
       introTexts: ['كويز على السريع'],
       content: (
         <QuizSlide
-          question="ايه اكتر دلع بحبه غير يويو طبعا🤔"
+          question="EH aktar akla bahebha?"
           options={sweetTalkQuizOptions}
           accentColor="#5cffb6"
-          revealMessage="روحي طبعا ده عامل ستار لفويس بتقوليها فيه"
+          revealMessage="عقبال ما اكلها من ايدك"
         />
       )
     },
@@ -380,89 +279,11 @@ function App() {
       introTexts: ["اكتر صورة بحبها🤔"],
       content: (
         <QuizSlide
-          question="اكتر بوست بحبه🤔"
+          question="اكتر صورة بحبه🤔"
           options={memoryGuessQuizOptions}
           accentColor="#ff8ddf"
           revealMessage="قمر في كله كده كده"
         />
-      )
-    },
-    {
-      id: 11,
-      bgColor: 'linear-gradient(135deg, #f1bad1 0%, #f2a3ce 55%, #6ba8ed 100%)',
-      introTexts: ['هموتك لو معرفتيهاش ديه', 'ايه باسورد الموبايل بتاعي🤔'],
-      content: (
-        <QuizSlide
-          question="ايه باسورد الموبايل بتاعي🤔"
-          options={passwordQuizOptions}
-          accentColor="#ff8ddf"
-          revealMessage="مغيره عشانككك بس"
-        />
-      )
-    },
-    {
-      id: 12,
-      bgColor: 'linear-gradient(135deg, #f1b0b0 0%, #ff9b40 55%, #54bafb 100%)',
-      introTexts: ["طبعا الجايه ديه معروفة مش محتاج اسئل"],
-      content: (
-        <QuizSlide
-          question="مين كسب في الكلاي ديت🤔"
-          options={clayDateTalkQuizOptions}
-          accentColor="#ff8ddf"
-          revealMessage="عشان يومي يعدي بس"
-        />
-      )
-    },
-    {
-      id: 14,
-      bgColor: 'linear-gradient(135deg, #f0b48d 0%, #ff7b3c 55%, #35e0cf 100%)',
-      introTexts: ['كانت سنه طويييلة','"و فيها هايلايتس كتييير','"بس التوب كانوا'],
-      content: (
-        <div className="slide-container" style={{ padding: '1.5rem' }}>
-          <motion.h2
-            initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            style={{ fontSize: '2rem' }}
-          >
-            This Years Top Highlights
-          </motion.h2>
-          <motion.ul style={{ listStyle: 'none', padding: 0, marginTop: '12px' }}>
-            {[
-              { text: 'طنط و منه عرفوا عني', image: '/imgs/refa3ySticker.jpeg'},
-              { text: 'Clay Date', image: '/imgs/ClayDateNormal.jpeg'},
-              { text: 'لما جيتي الجامعة', image: '/imgs/StandingCU.jpeg'},
-              { text: 'يوم الجامعة الطويييل', image: '/imgs/StandingASU.jpeg'},
-              { text: 'الشنطة', image: '/imgs/Bag.jpeg'}
-            ].map((item, i) => (
-              <motion.li
-                key={item.text}
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.3 + i * 0.2 }}
-                style={{ 
-                  fontSize: '1.2rem',
-                  margin: '12px 0',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '10px'
-                }}
-              >
-                <span style={{ fontWeight: 'bold', minWidth: '30px' }}>{i + 1}</span>
-                <img 
-                  src={item.image} 
-                  alt={item.text}
-                  style={{ 
-                    width: '80px',
-                    height: '80px',
-                    objectFit: 'cover',
-                    borderRadius: '8px'
-                  }} 
-                />
-                <span>{item.text}</span>
-              </motion.li>
-            ))}
-          </motion.ul>
-        </div>
       )
     },
     {
@@ -479,7 +300,7 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            كل سنه و احنا مع بعض دايما و عقبال العمر كله و انت جمبي و جنجونتي انا بس❤️
+          كل سنه وانتي طيبه يا روح قلبي وعقبال مليون سنه وتكوني جنبي ربنا يخليكي ليا وميحرمنيش منك سنه عدت وهتعدي غيرها وهكون جنبك ومش هتغير وهفضل اقرفك علطول بحبك يا قلبي وحياتي❤️
           </motion.h2>
           <div className="heart-rain">
             {floatingHearts.map(heart => (
@@ -520,7 +341,7 @@ function App() {
           </motion.h1>
           <div style={{ marginTop: '2rem' }}>
             <img
-              src="/imgs/byebyegif.gif"
+              src="/imgs/thankyou.gif"
               alt="Goodbye animation"
               style={{ width: '220px', height: '220px', objectFit: 'cover', borderRadius: '12px' }}
             />
